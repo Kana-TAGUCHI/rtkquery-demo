@@ -1,5 +1,14 @@
 ## Installation
 
+### Docker
+https://www.docker.com/
+
+### Nest.js
+```bash
+npm i -g @nestjs/cli
+```
+
+### Dependencies
 ```bash
 $ npm install
 ```
@@ -9,11 +18,16 @@ $ npm install
 ### DB Server
 
 ```bash
-# launch local Postgres server
+# Launch local Postgres server
 docker-compose up -d
+
+# Stop local Postgres server
+docker-compose down
 
 # Prisma Studio
 npx prisma studio
+
+
 ```
 
 ### App Server
