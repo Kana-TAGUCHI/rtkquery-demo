@@ -14,8 +14,16 @@ export class RecipesRepository {
     where?: Prisma.RecipeWhereInput;
     orderBy?: Prisma.RecipeOrderByWithRelationInput;
   }): Promise<Recipe[]> {
-    const { skip, take, cursor, where, orderBy } = params;
-    return this.prisma.recipe.findMany({ skip, take, cursor, where, orderBy });
+    const { skip, take, cursor, where } = params;
+    return this.prisma.recipe.findMany({
+      skip,
+      take,
+      cursor,
+      where,
+      orderBy: {
+        id: 'asc',
+      },
+    });
   }
 
   async getRecipe(recipeId: number): Promise<Recipe> {

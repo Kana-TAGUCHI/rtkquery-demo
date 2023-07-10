@@ -1,14 +1,17 @@
 ## Installation
 
 ### Docker
+
 https://www.docker.com/
 
 ### Nest.js
+
 ```bash
 npm i -g @nestjs/cli
 ```
 
 ### Dependencies
+
 ```bash
 $ npm install
 ```
@@ -26,6 +29,9 @@ docker-compose down
 
 # Prisma Studio
 npx prisma studio
+
+# Migration
+npx migrate dev
 
 
 ```
