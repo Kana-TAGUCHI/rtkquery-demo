@@ -45,3 +45,10 @@ $ npm run start
 # watch mode
 $ npm run start:dev
 ```
+
+### URL
+
+```
+API Server: http://localhost:3333/
+Prisma Studio: http://localhost:5555/
+```

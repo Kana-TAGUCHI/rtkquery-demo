@@ -5,7 +5,12 @@ const HomePage = () => {
     <>
       <h1 className='text-3xl'>Home</h1>
       <div className='pt-10'>
-        <Link href='/recipes'>Go to Recipes List</Link>
+        <Link
+          href='/recipes'
+          className='block bg-sky-700 p-4 font-bold w-38 text-center hover:opacity-70 rounded'
+        >
+          RECIPES LIST
+        </Link>
       </div>
     </>
   );
