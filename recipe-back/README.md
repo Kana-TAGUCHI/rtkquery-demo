@@ -24,7 +24,7 @@ $ npm install
 # Launch local Postgres server
 docker-compose up -d
 
-# Stop local Postgres server
+# Stop local Postgres server (when you want to stop)
 docker-compose down
 
 # Prisma Studio
@@ -42,9 +42,6 @@ npx migrate dev
 # development
 $ npm run start
 
-# watch mode (recommend)
+# watch mode
 $ npm run start:dev
-
-# production mode
-$ npm run start:prod
 ```
