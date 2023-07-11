@@ -42,7 +42,7 @@ const UpdateRecipePage = () => {
 
   const handleUpdate: SubmitHandler<Inputs> = async (data) => {
     try {
-      updateRecipe({ id: Number(params.id), body: data }).unwrap();
+      await updateRecipe({ id: Number(params.id), body: data }).unwrap();
       router.push(`/recipes/${params.id}`);
     } catch {
       console.error('Update Error');
@@ -51,7 +51,7 @@ const UpdateRecipePage = () => {
 
   const handleDelete = async () => {
     try {
-      deleteRecipe(Number(params.id)).unwrap();
+      await deleteRecipe(Number(params.id)).unwrap();
       router.push('/recipes');
     } catch {
       console.error('Delete Error');

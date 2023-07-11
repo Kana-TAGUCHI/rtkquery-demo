@@ -22,7 +22,7 @@ const NewRecipePage = () => {
 
   const onSubmit: SubmitHandler<Inputs> = async (data) => {
     try {
-      createRecipe(data).unwrap();
+      await createRecipe(data).unwrap();
       router.push('/recipes');
     } catch {
       console.error('Create Error');

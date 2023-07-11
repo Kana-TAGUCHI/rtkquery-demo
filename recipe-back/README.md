@@ -31,7 +31,7 @@ docker-compose down
 npx prisma studio
 
 # Migration
-npx migrate dev
+npn run migrate dev
 
 
 ```
